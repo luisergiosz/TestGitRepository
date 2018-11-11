@@ -1,4 +1,5 @@
 #include <iostream>
+#include "ControlSignalSlot.h"
 
 using namespace std;
 

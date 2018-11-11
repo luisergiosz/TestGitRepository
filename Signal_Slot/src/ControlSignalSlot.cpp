@@ -9,3 +9,8 @@ ControlSignalSlot::~ControlSignalSlot()
 {
     //dtor
 }
+
+void ControlSignalSlot::run()
+{
+
+}

@@ -1,6 +1,6 @@
 #ifndef CONTROLSIGNALSLOT_H
 #define CONTROLSIGNALSLOT_H
-
+#include <thread>
 
 class ControlSignalSlot
 {
@@ -11,6 +11,7 @@ class ControlSignalSlot
     protected:
 
     private:
+        void run();
 };
 
 #endif // CONTROLSIGNALSLOT_H
