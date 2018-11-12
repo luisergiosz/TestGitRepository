@@ -24,10 +24,10 @@ public:
     B(string class_name):SignalSlot(class_name)
     {
         LOG("B:B()");
-        connect("slot_function",slot_function);
+        connect("slot_function",bind(&B::slot_function,this));
     }
     virtual ~B(){LOG("B:~B()");}
-    static void slot_function()
+    void slot_function()
     {
         cout << "B::slot_function()" << endl;
     }
@@ -41,5 +41,14 @@ int main()
     a.slot_function();
 
     cin.get();
+    a.slot_function();
+    cin.get();
+    a.slot_function();
+    cin.get();
+    a.slot_function();
+    cin.get();
+    a.slot_function();
+
+
     return 0;
 }

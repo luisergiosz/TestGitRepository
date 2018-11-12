@@ -55,12 +55,10 @@ void SignalSlot::call_slots()
         {
            if((*it).first == func)
            {
-                (*(*it).second)();
+                (*it).second();
            }
         }
    }
-
-
 }
 
 void SignalSlot::connect(std::string func_name,FuncPtr func)
@@ -74,7 +72,6 @@ void SignalSlot::run()
     while(!SignalSlot::bFinished)
     {
         std::this_thread::sleep_for(std::chrono::milliseconds(100));
-        //LOG_(".");
         call_slots();
     }
     LOG_3("finishing signalslot [","","]");

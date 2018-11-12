@@ -12,7 +12,7 @@
 #define LOG(x)          std::cout << x << std::endl;
 #define LOG_2(x,y)      std::cout << x << y << std::endl;
 #define LOG_3(x,y,z)    std::cout << x << y << z << std::endl;
-typedef void (*FuncPtr)();
+typedef std::function<void(void)> FuncPtr;
 
 class SignalSlot
 {

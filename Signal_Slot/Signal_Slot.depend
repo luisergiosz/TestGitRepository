@@ -1,9 +1,9 @@
 # depslib dependency file v1.0
-1542003435 source:c:\users\rdi\source\testgitrepository\signal_slot\main.cpp
+1542005779 source:c:\users\rdi\source\testgitrepository\signal_slot\main.cpp
 	<iostream>
 	"SignalSlot.h"
 
-1542003738 c:\users\rdi\source\testgitrepository\signal_slot\include\signalslot.h
+1542005779 c:\users\rdi\source\testgitrepository\signal_slot\include\signalslot.h
 	<thread>
 	<chrono>
 	<mutex>
@@ -11,6 +11,6 @@
 	<list>
 	<iostream>
 
-1542003796 source:c:\users\rdi\source\testgitrepository\signal_slot\src\signalslot.cpp
+1542004840 source:c:\users\rdi\source\testgitrepository\signal_slot\src\signalslot.cpp
 	"SignalSlot.h"
 
